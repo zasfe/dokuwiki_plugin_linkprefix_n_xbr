@@ -1,0 +1,6 @@
+base   linkprefix
+author Heiko Barth
+date   2017-10-06
+name   linkprefix plugin
+desc   Adds a custom string infront of all external URLs. This is useful for referer remove services.
+url    http://www.dokuwiki.org/plugin:linkprefix
