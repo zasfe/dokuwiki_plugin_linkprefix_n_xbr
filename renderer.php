@@ -26,7 +26,7 @@ class renderer_plugin_linkprefix extends Doku_Renderer_xhtml {
 		return false;
 	}
 
-	function externallink($url, $name = NULL) {
+	function externallink($url, $name = null, $returnonly = false) {
 		if (!$this->getConf('prefix') || $this->getConf('ignore_same_domain') == 1 && strtolower(parse_url($url, PHP_URL_HOST)) == strtolower($_SERVER["HTTP_HOST"])) {
 			return parent::externallink($url, $name);
 		}
@@ -43,7 +43,7 @@ class renderer_plugin_linkprefix extends Doku_Renderer_xhtml {
 		return parent::externallink($url, $name);
 	}
 
-	function _resolveInterWiki($shortcut,$reference){
+	function _resolveInterWiki(&$shortcut, $reference, &$exists = null) {
 		if (!$this->getConf('prefix')) {
 			return parent::_resolveInterWiki($shortcut,$reference);
 		}
