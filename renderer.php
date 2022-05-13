@@ -13,7 +13,7 @@ if (!defined('DOKU_LF')) define('DOKU_LF', "\n");
 if (!defined('DOKU_TAB')) define('DOKU_TAB', "\t");
 require_once DOKU_INC.'inc/parser/xhtml.php';
 
-class renderer_plugin_linkprefix_n_xbr extends Doku_Renderer_xhtml {
+class renderer_plugin_linkprefixnxbr extends Doku_Renderer_xhtml {
 	function getInfo() {
 		return confToHash(dirname(__FILE__).'/plugin.info.txt');
 	}
