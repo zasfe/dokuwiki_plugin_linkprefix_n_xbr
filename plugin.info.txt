@@ -1,6 +1,6 @@
-base   linkprefix_n_xbr
+base   linkprefixnxbr
 author Heiko Barth
 date   2019-01-02
-name   linkprefix_n_xbr plugin
+name   linkprefixnxbr plugin
 desc   Adds a custom string infront of all external URLs. This is useful for referer remove services.
-url    https://www.dokuwiki.org/plugin:linkprefix_n_xbr
+url    https://www.dokuwiki.org/plugin:linkprefixnxbr
